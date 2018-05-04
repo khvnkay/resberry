@@ -14,7 +14,7 @@ class App extends Component
    
   render: ->
     me = @
-    <h2> Rkongkan! </h2>
+    <h2> Rkongkan!test </h2>
 
 
 mapDispatchToProps= (dispatch) ->
