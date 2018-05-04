@@ -1,32 +1,33 @@
-import { connect }                     from 'react-redux'
-import React, { Component }             from 'react'
-import { render }                       from 'react-dom'
-import { Button }                       from 'semantic-ui-react'
+import { connect }                          from 'react-redux'
+import React, { Component }                 from 'react'
+import { render }                           from 'react-dom'
+import { Container, Header, Button, Icon }  from 'semantic-ui-react'
+
+import LayoutComponent                      from './react/layoutComponent'
+import MenuBar                              from './react/menuBar'
+import Footer                              from './react/footer'
 
 import * as _ from 'lodash'
 
 
 class App extends Component
 
-
- 
   componentDidCatch: (error, info) ->
     alert error
    
   render: ->
     me = @
+
     <div>
-      <h2> Rkongkan!test123 </h2>
-      <button className="ui button">
-        Follow
-      </button>
+      <MenuBar />
+      <LayoutComponent/>
+      <Footer />
     </div>
 
 
-mapDispatchToProps= (dispatch) ->
+     
 
 
-mapStateToProps = ({login}) ->
   
 
 export default connect()(App)
