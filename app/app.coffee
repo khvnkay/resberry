@@ -20,6 +20,7 @@ class App extends Component
 
     <div>
       <MenuBar />
+      <LayoutComponent />
       <Footer />
     </div>
 
