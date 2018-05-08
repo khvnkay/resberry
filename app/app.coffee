@@ -13,14 +13,13 @@ import * as _ from 'lodash'
 class App extends Component
 
   componentDidCatch: (error, info) ->
-    alert error
+    # alert error
    
   render: ->
     me = @
 
     <div>
       <MenuBar />
-      <LayoutComponent/>
       <Footer />
     </div>
 

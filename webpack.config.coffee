@@ -28,8 +28,6 @@ config =
     filename: 'bundle.js'
   resolve: 
     extensions:  ['.js', '.coffee', '.jsx', '.css','scss']
-    alias: 
-      'redux-promise-middleware1': path.join(__dirname, '..', 'src')
     
   module:
     loaders: [
