@@ -14,7 +14,7 @@ class ActivityHome extends Component
   render: ->
     me = @
 
-    <Segment inverted  vertical>
+    <Segment   vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>

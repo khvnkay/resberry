@@ -26,6 +26,7 @@ class MenuBar extends Component
     @state = {
       activeItem: 'Home'
       fixed: false
+      minHeight: 0
     }
   handleItemClick: (e) =>
     console.log e,"-=-="
@@ -51,39 +52,48 @@ class MenuBar extends Component
             me.setState
               fixed: false
             }>
-        <Segment  textAlign='center' style={{ minHeight: 700, padding: '1em 0em' }} vertical>
+        <Segment inverted  textAlign='center' style={{ minHeight: me.state.minHeight, padding: '1em 0em' }} vertical>
           <Menu 
             fixed={if me.state.fixed then  'top'}
             inverted={!me.state.fixed}
             pointing={!me.state.fixed}
             secondary={!me.state.fixed}
-            size='large'
+            size='small'
             >
             <Container>
               {
                 menus = ['Home','Portfolio','Activity', 'Blog']
                 arr = []
-
                 _.each menus ,(value, key) ->
                   arr.push(
-                    <Menu.Item name={value}  
-                      active={activeItem is {value}} 
-                      style={backgroundColor: me.color(activeItem is {value})} 
+                    <Menu.Item name={value}  key={key}
+                      active={activeItem is value} 
                       as={Link} to="/#{value}"
                       onClick={()->
-                          me.setState 
-                            activeItem: {value}}/>
+                        me.setState 
+                          activeItem: value
+                        if value is 'Home'
+                          me.setState
+                            minHeight: 700
+                        else
+                          me.setState
+                            minHeight: 0}
+                    />
                   )
                 arr
-              
               }
-              
+              <Menu.Item position='right'>
+                <Button as='a' inverted={!me.state.fixed}>Log in</Button>
+                <Button as='a' inverted={!me.state.fixed} primary={me.state.fixed} style={{ marginLeft: '0.5em' }}>Sign Up</Button>
+              </Menu.Item>
             </Container>
           </Menu>
-          <Route exact path="/home" component={Home}/>
-          <Route exact path="/portfolio" component={PortfolioHome}/>
-          <Route exact path="/blog" component={BlogHome}/>
+          <Route exact path="/Home" component={Home}/>
+          <Route exact path="/" component={Home}/>
         </Segment>
+        <Route exact path="/Activity" component={ActivityHome}/>
+        <Route exact path="/Portfolio" component={PortfolioHome}/>
+        <Route exact path="/Blog" component={BlogHome}/>
       </Visibility>
     </Router>
 

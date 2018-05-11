@@ -2,7 +2,7 @@ webpack = require 'webpack'
 path = require 'path'
 
 HtmlWebpackPlugin = require 'html-webpack-plugin'
-SOCKET_PORT = parseInt(process.env.WEBPACK_DEV_SOCKET_PORT || 8080)
+SOCKET_PORT = parseInt(process.env.WEBPACK_DEV_SOCKET_PORT || 8888)
 sourcePath = path.join __dirname
 
 console.log "==================================="
