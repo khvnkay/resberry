@@ -28,8 +28,11 @@ class Social extends Component
     position: 'relative'
     left: 0
     transition: 'left 0.5s ease'
+    
+  fixedOverlayMenuStyle = 
+    overlayMenuStyle: null
+    left: '800px'
   stickOverlay:() ->
-    console.log "=====test" 
     @setState
       overlayFixed: true
 
@@ -38,7 +41,6 @@ class Social extends Component
       menuFixed: true
 
   unStickOverlay: () ->
-    console.log "123456" 
     @setState
       overlayFixed: false
 
@@ -54,9 +56,7 @@ class Social extends Component
       @setState
         overlayRect: 
           _.pick(c.getBoundingClientRect(), 'height', 'width')
-  fixedOverlayMenuStyle = 
-    overlayMenuStyle: null
-    left: '800px'
+
   render: ->
     
     me = @

@@ -8,6 +8,7 @@ import reducer                          from './ducks'
 import promiseMiddleware                from 'redux-promise-middleware'
 import { createLogger }                 from 'redux-logger'
 import { composeWithDevTools }          from 'redux-devtools-extension'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './app'
 
 viewport = null
@@ -20,7 +21,9 @@ render = (Component)=>
   ReactDOM.render(
     <Provider store={store}>    
       <AppContainer>
-        <App />
+        <Router>
+          <App />
+        </Router>
       </AppContainer>
     </Provider>
   ,

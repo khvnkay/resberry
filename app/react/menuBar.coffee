@@ -90,6 +90,7 @@ class MenuBar extends Component
           </Menu>
           <Route exact path="/Home" component={Home}/>
           <Route exact path="/" component={Home}/>
+          <Image src={homepic}  /> 
         </Segment>
         <Route exact path="/Activity" component={ActivityHome}/>
         <Route exact path="/Portfolio" component={PortfolioHome}/>
