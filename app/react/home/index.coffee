@@ -4,6 +4,7 @@ import { render }                           from 'react-dom'
 import { ResponsiveContainer, Segment, Grid, Header , Image, Button }  from 'semantic-ui-react'
 import homepic  from '/home/krongkan/Works/resberry/app/assets/img/home1.png'
 import Social from '../components/socials'
+import GridPhoto from './grid'
 
 
 import * as _ from 'lodash'
@@ -21,10 +22,7 @@ class Home extends Component
 
 
 
-      <Social />
-      <Image src={homepic}  />
-      <Image src={homepic}  />
-      <Image src={homepic}  />
+      <GridPhoto />
     </div>
 export default Home
 

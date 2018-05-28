@@ -14,6 +14,7 @@ import homepic  from '/home/krongkan/Works/resberry/app/assets/img/home1.png'
 import * as _ from 'lodash'
 import Routes from './Routes'
 import { Link, withRouter } from 'react-router-dom'
+import HomepageHeading                      from './react/homePageHeading'
 
 
 
@@ -89,9 +90,9 @@ class App extends Component
             </Container>
           </Menu>
         </Segment>
-        <Image src={homepic}  />
       </Visibility>
       <Routes    />
+      #cann't change menu to tranparent becuase this is semantic multi page not bootstrap one page
     </div>
 
 

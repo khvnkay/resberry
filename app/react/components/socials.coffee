@@ -97,6 +97,10 @@ class Social extends Component
             <Icon name='mail' />
            Email
           </Menu.Item>
+          <Menu.Item>
+            <Icon name='mail' />
+           Linkin
+          </Menu.Item>
         </Menu>
       </div>
     </Container>
