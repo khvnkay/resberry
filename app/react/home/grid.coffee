@@ -11,7 +11,7 @@ require '/home/krongkan/Works/resberry/app/assets/css/example-styles.css'
 ResponsiveReactGridLayout = WidthProvider(Responsive);
 
 generateLayout= ()=> 
-  return _.map _.range(0, 5), (item, i) -> 
+  return _.map _.range(0, 15), (item, i) -> 
     y = Math.ceil(Math.random() * 4) + 1
     return{
       x: (_.random(0, 5) * 2) % 12,
