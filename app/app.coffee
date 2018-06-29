@@ -1,6 +1,6 @@
 import React,{ Component }      from 'react'
 import { connect } from 'react-redux'
-import logo                            from "/home/krongkan/Works/resberry/app/assets/img/logo.png"
+import logo                            from "/app/assets/img/logo.png"
 import { 
   Responsive, 
   Visibility, 
@@ -10,7 +10,7 @@ import {
   Image,
 
   Button }  from 'semantic-ui-react'
-import homepic  from '/home/krongkan/Works/resberry/app/assets/img/home1.png'
+import homepic  from '/app/assets/img/home1.png'
 import * as _ from 'lodash'
 import Routes from './Routes'
 import { Link, withRouter } from 'react-router-dom'

@@ -2,7 +2,7 @@ import { connect }                          from 'react-redux'
 import React, { Component }                 from 'react'
 import { render }                           from 'react-dom'
 import { ResponsiveContainer, Segment, Grid, Header , Image, Button }  from 'semantic-ui-react'
-import homepic  from '/home/krongkan/Works/resberry/app/assets/img/home1.png'
+import homepic  from '/app/assets/img/home1.png'
 import Social from '../components/socials'
 import GridPhoto from './grid'
 
