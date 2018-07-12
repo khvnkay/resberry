@@ -1,0 +1,1 @@
+docker run --rm -it -v $(pwd)/app:/app  --name my-web -p  9999:9999   --workdir=/app khvnkay/resberry bash
