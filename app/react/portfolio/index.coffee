@@ -3,6 +3,8 @@ import React, { Component }                 from 'react'
 import { render }                           from 'react-dom'
 import { ResponsiveContainer, Segment, Grid, Header , Image, Button }  from 'semantic-ui-react'
 import Experience from './experience'
+import Skill from './skill'
+import Education from './education'
 import LayoutComponent                      from '../layoutComponent'
 import * as _ from 'lodash'
 
@@ -23,10 +25,14 @@ class PortfolioHome extends Component
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          Experience
+          <Education />
+        </Grid.Row>
+        <Grid.Row>
           <Experience />
         </Grid.Row>
-       
+       <Grid.Row>
+        <Skill />
+       </Grid.Row>
       </Grid>
     </Segment>
 export default PortfolioHome
