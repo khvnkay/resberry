@@ -11,7 +11,8 @@ console.log "NODE_ENV = ", process.env.NODE_ENV
 console.log "SOCKET_PORT = ", SOCKET_PORT
 console.log "==================================="
 config =
-  node: 
+  node:
+    fs: 'empty'
     __filename: true
   devtool: 'eval-source-map'
   entry:[

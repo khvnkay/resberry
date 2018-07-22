@@ -2,9 +2,8 @@ import { connect }                          from 'react-redux'
 import React, { Component }                 from 'react'
 import { render }                           from 'react-dom'
 import { ResponsiveContainer, Segment, Grid, Header , Image, Button }  from 'semantic-ui-react'
-
+import Story from './story'
 import * as _ from 'lodash'
-
 
 class BlogHome extends Component
 
@@ -19,9 +18,6 @@ class BlogHome extends Component
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>BlogHome</Header>
-            
-            <Header as='h3' style={{ fontSize: '2em' }}>We Make Bananas That Can Dance</Header>
-            
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
             <Image
@@ -31,11 +27,18 @@ class BlogHome extends Component
             />
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
-          </Grid.Column>
-        </Grid.Row>
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+        <Story />
+
       </Grid>
     </Segment>
 export default BlogHome

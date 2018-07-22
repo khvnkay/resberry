@@ -7,6 +7,7 @@ import Social from '../components/socials'
 import GridPhoto from './grid'
 import OurMe from './ourMe'
 import AboutMe from './aboutMe'
+import GalleryCard from './gallery'
 import * as _ from 'lodash'
 
 
@@ -19,7 +20,7 @@ class Home extends Component
     me = @
 
     <div>
-      <GridPhoto />
+      <GalleryCard />
       <AboutMe />
       <OurMe />
     </div>

@@ -23,7 +23,10 @@ photos = [
   { src: 'https://source.unsplash.com/PpOHJezOalU/800x599', width: 4, height: 3 },
   { src: 'https://source.unsplash.com/I1ASdgphUH4/800x599', width: 4, height: 3 }
 ]
-
+Instagram = require('instagram-web-api')
+client = new Instagram({ "khvnkay", "kk88ig" })
+async = require('async')
+Promise = require 'bluebird'
 class Instagram extends Component
 
   componentDidCatch: (error, info) ->
@@ -33,7 +36,13 @@ class Instagram extends Component
     me = @
 
     <div>
-       <Gallery photos={photos} />
+      {
+        
+        await client.login()
+        profile = await client.getProfile()
+        console.log(profile)()
+      }
+      <Gallery photos={photos} />
     </div>
 export default Instagram
 

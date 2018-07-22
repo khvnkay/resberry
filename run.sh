@@ -1,1 +1,1 @@
-docker run --rm -it -v $(pwd)/app:/app  -p  9999:9999   --workdir=/app khvnkay/resberry bash
+docker run --rm -it -v /home/krongkan/Works/resberry/app:/app   -p  9999:9999    khvnkay/resberry bash
