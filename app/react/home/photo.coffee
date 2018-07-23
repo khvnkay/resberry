@@ -9,6 +9,8 @@ cont =
   overflow: 'hidden'
   float: 'left'
   position: 'relative'
+  width: '200px'
+  height: '200px'
 
 
 export default ({ photo, margin}) =>

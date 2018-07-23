@@ -28,7 +28,6 @@ class App extends Component
       minHeight: 0
     }
   handleItemClick: (e) =>
-    console.log e,"-=-="
     me =@ 
     me.setState
       activeItem: e

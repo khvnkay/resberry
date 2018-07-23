@@ -8,7 +8,6 @@ import ActivityHome                      from './react/activity/index'
 import NotFound                      from './react/components/notFound'
 
 export default   ({childProps} ) =>
-  console.log "==props"
   <Switch>
     <AppliedRoute path="/" exact component={Home}   />
     <AppliedRoute path="/activity" exact component={ActivityHome}   />
