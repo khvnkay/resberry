@@ -27,35 +27,35 @@ class Education extends Component
       <Grid divided='vertically'>
         <Grid.Row columns={5}>
           <Grid.Column>
-            <Image src={e1} onClick={()-> console.log "====="} />
+            <Image src={e1} onClick={()-> console.log "====="}  disabled={ !(me.state.percent >= 20) } />
             <Header as='h2' icon>
               Account Settings
               <Header.Subheader>Manage your account settings and set e-mail preferences.</Header.Subheader>
             </Header>
           </Grid.Column>
           <Grid.Column>
-            <Image src={e2}  />
+            <Image src={e2}  disabled={ !(me.state.percent >= 40) } />
             <Header as='h2' icon>
               Account Settings
               <Header.Subheader>Manage your account settings and set e-mail preferences.</Header.Subheader>
             </Header>
           </Grid.Column>
           <Grid.Column>
-            <Image src={e3}  />
+            <Image src={e3} disabled={ !(me.state.percent >= 60) } />
             <Header as='h2' icon>
               Account Settings
               <Header.Subheader>Manage your account settings and set e-mail preferences.</Header.Subheader>
             </Header>
           </Grid.Column>
           <Grid.Column>
-            <Image src={e4}  />
+            <Image src={e4} disabled={ !(me.state.percent >= 80) } />
             <Header as='h2' icon>
               Account Settings
               <Header.Subheader>Manage your account settings and set e-mail preferences.</Header.Subheader>
             </Header>
           </Grid.Column>
           <Grid.Column>
-            <Image src={e5}  />
+            <Image src={e5} disabled={ !(me.state.percent >= 100) }  />
             <Header as='h2' icon>
               Account Settings
               <Header.Subheader>Manage your account settings and set e-mail preferences.</Header.Subheader>
