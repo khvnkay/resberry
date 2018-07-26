@@ -10,8 +10,9 @@ import react from '/app/assets/img/skill_react.png'
 import { ResponsiveContainer, Segment, Grid, Header , Image, Button }  from 'semantic-ui-react'
 import * as _ from 'lodash'
 
-require '/app/assets/css/base.css'
-require '/app/assets/css/slider.css'
+# require '/app/assets/css/base.css'
+# require '/app/assets/css/slider.css'
+# blog is error because css
 class PicSlide extends Component
 
   componentDidCatch: (error, info) ->
