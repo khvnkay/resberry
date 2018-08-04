@@ -21,7 +21,6 @@ class PortfolioHome extends Component
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
-            me education
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
